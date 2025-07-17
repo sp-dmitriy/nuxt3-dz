@@ -1,0 +1,16 @@
+:root {
+    --font: "Roboto", sans-serif;
+    
+    --color-primary: #191919;
+    --color-grey: #292929;
+    --color-white: #FFFFFF;
+
+    --border-radius: 20px;
+}
+
+body {
+    color: var(--color-grey);
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 300;
+}
