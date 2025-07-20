@@ -9,14 +9,12 @@ import "~/assets/styles/main.css"
 </template>
 
 <style scoped>
-.page {
-  &-enter-active,
-  &-leave-enter {
-    transition: akk 0.3s;
-  }
-  &-enter-from,
-  &-leave-to {
-    opacity: 0;
-  }
+.page-enter-active, 
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter-from, 
+.page-leave-to {
+  opacity: 0;
 }
 </style>

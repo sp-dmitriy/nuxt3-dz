@@ -59,7 +59,7 @@
         }
     }
     &__title {
-        font-style: 22px;
+        font-size: 22px;
         font-weight: 400;
         color: var(--color-primary);
     }
