@@ -17,30 +17,32 @@
 </template>
 
 <style scoped>
-.page-error__wrapper {
-    height: 100%;
-    min-width: 430px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.page-error__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-} 
-.page-error__title {
-    padding: 0;
-    margin: 0;
-    font-size: 120px;
-    font-weight: 500;
-    color: var(--color-grey);
-}
-.page-error__text {
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--color-grey);
+.page-error {
+      &__wrapper {
+        height: 100%;
+        min-width: 430px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    } 
+    &__title {
+        padding: 0;
+        margin: 0;
+        font-size: 120px;
+        font-weight: 500;
+        color: var(--color-grey);
+    }
+    &_text {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-grey);
+    }
 }
 </style>

@@ -10,6 +10,17 @@ export default defineNuxtConfig({
       },
     ],
   },
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    }
+  },
+  postcss: {
+    plugins: {
+      'postcss-nested': {}
+    }
+  },
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
