@@ -2,14 +2,15 @@
     --font: "Roboto", sans-serif;
     
     --color-primary: #191919;
-    --color-grey: #292929;
+    --color-dark-grey: #292929;
+    --color-light-grey: #E6E6E6;
     --color-white: #FFFFFF;
 
     --border-radius: 20px;
 }
 
 body {
-    color: var(--color-grey);
+    color: var(--color-dark-grey);
     font-family: var(--font);
     font-size: 16px;
     font-weight: 300;
