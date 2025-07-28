@@ -1,26 +1,27 @@
+<script setup lang="ts">
+    import type { Post } from '~/interfaces/post.interface';
+    const post = defineProps<Post>()
+</script>
+
 <template>
-    <div class="post-card">
+    <NuxtLink class="post-card" :to="`/post/${post.id}`">
         <div class="post-card__top">
             <Icon name="icons:ava" size="24" />
             <span class="post-card__top-title">PurpleSchool</span>
             <span class="post-card__top-date">4 дня назад</span>
         </div>
-        <h3 class="post-card__title">Добавить функцию голосования</h3>
-        <div class="post-card__text">
-            Попробовать добавить в приложение функцию голосования, 
-            которая позволит определить, какая фича более полезна, а какая нет. 
-            После добавления поста появляется...
-        </div>
+        <h3 class="post-card__title">{{ post.title }}</h3>
+        <div class="post-card__text">{{ post.content }}</div>
         <div class="post-card__bottom">
             <div class="post-card__rating">
                 <div class="post-card__rating-field">
-                    <span>10</span>
+                    <span>{{ post.likes }}</span>
                     <button>
                         <Icon name="icons:like" size="18" />
                     </button>
                 </div>
                 <div class="post-card__rating-field">
-                    <span>1</span>
+                    <span>{{ post.dislikes }}</span>
                     <button>
                         <Icon name="icons:dislike" size="18" />
                     </button>
@@ -36,13 +37,15 @@
                 </button>
             </div>
         </div>
-    </div>
+    </NuxtLink>
 </template>
 
 <style scoped>
 .post-card {
+    text-decoration: none;
     max-width: 690px;
     &__top {
+        padding-top: 35px;
         display: flex;
         align-items: center;
         &-title {
@@ -82,6 +85,7 @@
         align-items: center;
         gap: 10px;
         &-field {
+            color: var(--color-dark-grey);
             display: flex;
             align-items: center;
             button {
