@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      apiurl: ''
+    }
+  },
   icon: {
     customCollections: [
       {
