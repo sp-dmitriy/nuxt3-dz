@@ -14,6 +14,7 @@
 
 <style scoped>
 .post {
+    max-width: 692px;
     margin-left: 135px;
 }
 </style>
